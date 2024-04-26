@@ -1,9 +1,9 @@
 while True:
     # 메뉴출력
-    print("-" * 10)
+    print("-" * 20)
     print("1. 구구단 출력")
     print("2. 프로그램 종료")
-    print("-" * 10)
+    print("-" * 20)
     
     # 메뉴 값 입력
     select_menu = input()
@@ -38,4 +38,11 @@ while True:
 for num in range(1,101):
     if num % 3 == 0 or num % 7 == 0:
         print(num,"\t",end='')
-    
+
+# 1,3,5,7,9,11,13,15,17,19 출력
+for value in range(1,20,2):
+    print(value,end='')
+# 교수님    
+for value in range(1,20):
+    if value % 2 != 0:
+        print(value,"\t",end="")    
