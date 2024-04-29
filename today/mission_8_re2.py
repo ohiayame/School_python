@@ -6,7 +6,7 @@ def password_num(password):
             pass
         else:
             return False
-                         
+
     has_number = False        
     for char in password:
         # 적어도 하나의 숫자가 포함
@@ -15,16 +15,16 @@ def password_num(password):
     # 없으면 msg에 추가       
     if  has_number == False :    
         msg.append("숫자") 
-                   
+
     has_uppercase = False   
     for char in password: 
         # 적어도 하나의 대문자  
         if char.isupper():
             has_uppercase = True
-   # 없으면 msg에 추가         
+    # 없으면 msg에 추가         
     if has_uppercase == False:
-           msg.append("대문자") 
-       
+            msg.append("대문자") 
+
     has_len = False
     # 비밀번호의 길이가 8자 이상
     if len(password) >= 8:
@@ -33,7 +33,7 @@ def password_num(password):
     else:
         msg.append("8자 이상")
         
-       
+
     # 조건 Ok        
     if has_len and has_number and has_uppercase :
         return True

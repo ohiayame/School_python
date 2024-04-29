@@ -14,7 +14,7 @@ elif input_direction ==  "up" :
     
 elif input_direction == "down" :
     print("아래로 이동합니다.")  
-      
+
 # 다른 단어가 입력되면 "알 수 없는 명령입니다"를 출력
 else :
     print("알 수 없는 명령입니다")

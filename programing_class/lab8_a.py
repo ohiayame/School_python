@@ -34,7 +34,7 @@ while True :
 
     
 # while True :   
-                   
+
 #     inputvalue = input("입력: ").lower()
     
 #     if not any(char >= "A" and char <= "z" for char in inputvalue) :

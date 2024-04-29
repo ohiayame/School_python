@@ -29,5 +29,5 @@ def select0peration():
                 
     print("연산 결과: ", baseValue)  
     return  
-  
+
 select0peration()           

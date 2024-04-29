@@ -21,7 +21,7 @@ for char in msg :
             count += 1
         # word 초기화 
         word = ""   
-         
+
 # 마지막 word 검사 -> word == 지정 단어면 count +1           
 if input_msg == word:
             count += 1

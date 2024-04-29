@@ -11,7 +11,7 @@ if value1 != value2 != value3:
         print("모든 수가 다릅니다. 가장 큰 숫자는",value2, "입니다.") 
     else :
         print("모든 수가 다릅니다. 가장 큰 숫자는",value3, "입니다.")    
-             
+
 # 두 수가 같은 경우    
 elif value1 == value2 != value3 :
     print("두 수가 같습니다.({}와 {})".format(value1,value2))    

@@ -51,9 +51,3 @@ while True:
     # random_number가 1~10의 숫자 아니면 반복  
     else:
         print("에러: N은 1이상 100이하의 정수여야 합니다.")   
-        
-
-
-
-
-   

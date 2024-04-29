@@ -21,7 +21,7 @@ def saishohagu(jannkenn):
             msg =  'あいこ！' 
         else:
             msg = 'あなたの負けだよ！'
-                           
+
     elif computer_choice == 'ぱー':
         if jannkenn == "ぐー":
             msg = 'あなたの負けだよ！'
@@ -33,7 +33,7 @@ def saishohagu(jannkenn):
     return msg        
 
 while True: 
-          
+
     jannkenn = input("ぐーちょきぱーの中から一つ選んで入力してね！ ->　")        
     
     if jannkenn == 'ぐー' or jannkenn == 'ちょき' or jannkenn == 'ぱー':
@@ -50,4 +50,3 @@ while True:
             break
     else:
         print("間違った入力だよ！ぐーちょきぱーの中から一つ選んでね！")    
- 

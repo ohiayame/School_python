@@ -9,8 +9,8 @@ def convert_to_square_feet(square_meters):
 
 # convert_to_acres: 제곱미터를 에이커로
 def convert_to_acres(square_meters) :
-   acres = square_meters / 4046.86
-   return acres
+    acres = square_meters / 4046.86
+    return acres
 
 # 사용자로부터 토지의 면적을 제곱미터(m²) 단위로 입력 받는다
 input_square_meters = float(input("토지의 면적을 제곱미터(m²)단위로 입력하세요: "))

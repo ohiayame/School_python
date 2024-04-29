@@ -10,12 +10,12 @@ def  calculate_tax(income):
     # 1만 초과하고 2만 이하 15%, 1천 더하기    
     elif 10000 <= income <= 20000  :
         tax = (income - 10000) * 0.15 + 1000
-     
+
     # 2만 초과 20% , 2천 5백 더하기    
     elif 20000 <= income :
         tax = (income - 20000) * 0.2 + 2500
     return tax 
-       
+
 # 사용자로부터 소득 금액을 입력받는다
 input_income = int(input("소득 금액을 입력하세요: "))
 
