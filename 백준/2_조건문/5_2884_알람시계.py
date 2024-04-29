@@ -1,5 +1,5 @@
 # 45분 일찍 알람 설정하기
- 
+
 h,m = map (int,input().split())
 
 if m >= 45:

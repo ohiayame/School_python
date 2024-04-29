@@ -10,8 +10,8 @@ elif value2 >= value and value2 >= value3:
     print("제일 큰 값: ",value2)    
 else:
     print("제일 큰 값: ",value3)    
- 
- 
+
+
     
 # 1ばんいいやつ   
 value = int(input("1번째 값: "))

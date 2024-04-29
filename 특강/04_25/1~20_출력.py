@@ -2,7 +2,7 @@
 for value in range(1,21):
     print(value,"\t",end = "")
 
-  
+
 value = 1  
 while True:
     print(value)
