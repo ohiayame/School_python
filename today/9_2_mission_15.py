@@ -19,12 +19,12 @@ li = [2, 3, 4, 5, 6, 7, 8, 9, 2, 3, 4, 5]
 #         li.append(cheak_num) 
     
 total = 0 
- 
+
 for i in range(12):
     total += int(text[i]) * li[i]        
             
 last_value = (11 -(total % 11)) % 10 
- 
+
 if last_value == int(text[12]):
     print("유효한 주민번호입니다.") 
 else:
