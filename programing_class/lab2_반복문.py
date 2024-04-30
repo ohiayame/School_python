@@ -19,7 +19,7 @@ def num(random_number):
             return False
     #  아니면 True
     return True   
-           
+
 # 반복                 
 while True:
     # 사용자로부터 숫자를 입력받기
