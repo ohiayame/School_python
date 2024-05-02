@@ -13,3 +13,4 @@ elif value >= 60:
     score = "D"
 else:             
     score = "F"
+print(score)
