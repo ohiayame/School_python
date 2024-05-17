@@ -25,6 +25,9 @@ while len(cp_choice) < 3:
             flag = False
     if flag:
         cp_choice.append(computer_num)
+        
+    # num_range = range(10)
+    # cp_choice = random.sample(num_range, 3)
 
 # 게임 반복 시작
 while True:
