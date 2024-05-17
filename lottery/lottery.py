@@ -61,3 +61,4 @@ def check(numbers, winning_numbers: list):
     else:
         prize = 0
     return prize
+^^;
