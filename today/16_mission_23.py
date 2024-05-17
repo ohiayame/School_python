@@ -5,7 +5,7 @@ import random
 game_count = 0
 
 # pc 가 고르는 번호 리스트를 제시  , 선택한 번호를 넣는 리스트도 샌선  
-li = [0,1,2,3,4,5,6,7,8,9]
+#li = [0,1,2,3,4,5,6,7,8,9]
 cp_choice =  []
 
 # out count 선언
@@ -13,13 +13,21 @@ out = 0
 
 # 1) 게임 시작 시 0~9 사이의 중복되지 않는 정수 3개를 생성
 # 리스트에서 하나 걸라서 빼서 choice리스트에 넣기
-for i in range(3):
-    computer_num = random.choice(li)
-    li.remove(computer_num)
-    cp_choice.append(computer_num)
+    # for i in range(3):
+    #     computer_num = random.choice(li)
+    #     li.remove(computer_num)
+    #     cp_choice.append(computer_num)
+while len(cp_choice) < 3:
+    computer_num = random.randint(0,9)
+    flag = True
+    for num in cp_choice:
+        if num == computer_num:
+            flag = False
+    if flag:
+        cp_choice.append(computer_num)
 
 # 게임 반복 시작
-while True :
+while True:
     # 2) 플레이어는 키보드를 통해 0~9 사이의 정수 3개를 입력
     player_num = list(map(int,input(f"시도 {game_count}: 숫자를 입력 하세요").split()))
 
@@ -64,6 +72,10 @@ while True :
         msg = "승리"
         break
 print("게임 종료:", msg)
-for i in cp_choice:
-    print("정답", i, end=" ")
-    
+
+# re_num = ""
+# for i in cp_choice:
+#     re_num += str(i) + " "
+# print("정답", re_num)
+
+print(f"정답: {" ".join(map(str,cp_choice))}")
