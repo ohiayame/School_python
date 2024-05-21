@@ -1,8 +1,7 @@
 # 야구 게임 만들기
-
+# 특강 5/21
 import random
-# 게임 카운트를 선언
-game_count = 0
+
 
 # pc 가 고르는 번호 리스트를 제시  , 선택한 번호를 넣는 리스트도 샌선  
 #li = [0,1,2,3,4,5,6,7,8,9]
@@ -29,6 +28,8 @@ while len(cp_choice) < 3:
     # num_range = range(10)
     # cp_choice = random.sample(num_range, 3)
 
+# 게임 카운트를 선언
+game_count = 0
 # 게임 반복 시작
 while True:
     # 2) 플레이어는 키보드를 통해 0~9 사이의 정수 3개를 입력
@@ -43,17 +44,22 @@ while True:
     #    시도 횟수가 5번 이상일 경우, 스트라이크 아웃(Strike out) 횟수가 2번 이상일 경우
     for cp_index in range(3):
         for py_index in range(3):
-            if cp_index == py_index:                
-                if cp_choice[cp_index] == player_num[py_index]:
+            # if cp_index == py_index:                
+            #     if cp_choice[cp_index] == player_num[py_index]:
+            #         strike += 1
+                
+            # elif cp_choice[cp_index] == player_num[py_index]:
+            #     ball += 1
+            if cp_choice[cp_index] == player_num[py_index]:
+                if cp_index == py_index:
                     strike += 1
-                    
-            elif cp_choice[cp_index] == player_num[py_index]:
-                ball += 1
+                else:
+                    ball += 1
     
     if strike == 0 and ball == 0:
         out += 1
-        
-        
+    
+    
     game_count += 1 
     
     if out >= 1:
@@ -61,14 +67,17 @@ while True:
     else:
         print(f"결과: {strike} Strike, {ball} Ball")
     
-    if game_count == 5:
-        msg = "패배 (시도횟수 5회 초과)"
-        break
-    elif out == 2:
-        msg = "패배 (Strike out 횟수 2번 초과)"
-        break
+    # if game_count == 5:
+    #     msg = "패배 (시도횟수 5회 초과)"
+    #     break
+    # elif out == 2:
+    #     msg = "패배 (Strike out 횟수 2번 초과)"
+    #     break
+    # 삼항연산자
+    if game_count >= 5 or out >= 2:
+        msg = "5회이상 실행" if game_count >= 5 else "Strike out 횟수 2번 초과"    
+        print(f"패배 ({msg})")
         
-    
     # 4) 게임 승리
     #    플레이어가 컴퓨터가 생성한 난수 값을 자리 순서대로 모두 맞출 경우
     elif strike == 3  :
