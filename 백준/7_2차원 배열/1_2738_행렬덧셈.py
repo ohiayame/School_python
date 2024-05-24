@@ -1,0 +1,20 @@
+n, m = map(int,input().split())
+li_1 = []
+li_2 = []
+li_3 = []
+for _ in range(n):
+    num = map(int,input().split())
+    for i in num:
+        li_1.append(i)
+        
+for _ in range(n):
+    num =  map(int,input().split())
+    for i in num:
+        li_2.append(i)
+        
+for i in range(n * m):
+    result = int(li_1[i]) + int(li_2[i])
+    li_3.append(result)
+
+for i in range(0, len(li_3), 3):
+    print(*li_3[i:i+3])
