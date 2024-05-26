@@ -9,3 +9,13 @@ bishop = 2 - input_bishop
 night = 2 - input_night
 phon = 8 - input_phon
 print(kin, queen, look, bishop, night, phon)
+
+
+############
+
+chess = [1, 1, 2, 2, 2, 8]
+
+a = list(map(int, input().split()))
+
+for i in range(6):
+    print(chess[i] - a[i], end = " ")

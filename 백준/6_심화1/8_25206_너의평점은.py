@@ -36,3 +36,20 @@ if all_value != 0:
 else:
     all_avg = 0
 print("{:.6f}".format(all_avg))
+
+
+###########
+
+grade_dict = {"A+" : 4.5, "A0" : 4.0, "B+" : 3.5, "B0" : 3.0, "C+" : 2.5, "C0" : 2.0, "D+" : 1.5, "D0" : 1.0, "F" : 0 }
+sum_credit = 0
+sum_credit_by_grade = 0
+
+for i in range(20):
+    subject, credit, grade = input().split()
+    # 등급이 P가 아닌 경우만 학점 * 과목 평점을 쌓고, 학점도 쌓는다.
+    # 과목 평점의 경우 앞에 정의한 dict에서 등급을 넣어 값을 가져온다
+    if grade != "P":
+        sum_credit = sum_credit + float(credit)
+        sum_credit_by_grade = sum_credit_by_grade + credit * grade_dict[grade]
+
+print(sum_credit_by_grade/sum_credit)

@@ -1,5 +1,5 @@
-msg = input()
-msg = list(msg.upper())
+msg = list(set(input().upper()))
+
 li = []
 count = 0
 for char in msg:
