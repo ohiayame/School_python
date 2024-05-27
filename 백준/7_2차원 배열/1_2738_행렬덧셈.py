@@ -36,3 +36,19 @@ for row in range(N):
     for col in range(M):
         print(A[row][col] + B[row][col], end=' ')
     print()
+    
+##########
+#############################
+n, m = map(int, input().split())
+
+# 2次元リストの入力を一度に読み取る
+li_1 = [list(map(int, input().split())) for _ in range(n)]
+li_2 = [list(map(int, input().split())) for _ in range(n)]
+
+# 行列の対応する要素を足し合わせる
+li_3 = [[li_1[i][j] + li_2[i][j] for j in range(m)] for i in range(n)]
+
+# 結果を出力
+for row in li_3:
+    print(*row)
+    
