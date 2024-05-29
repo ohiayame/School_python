@@ -2,7 +2,7 @@
 import random
 # while 문과 break 문을 사용하여 숫자를 맞추는 게임
 # 정답 숫자 :  랜덤 1에서 100사이 
-random_num = random.randint(1,5)
+random_num = random.randint(1,100)
 # 사용자가 숫자를 맞출 때까지 반복
 while True:
     input_num = int(input("1부터 100사이의 숫자를 맞춰보세요:"))
