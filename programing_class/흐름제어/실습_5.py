@@ -6,7 +6,8 @@ sum = 0
 
 for value in score:
     student_num += 1
-    sum += int(value)
+    sum += value
     
 avg = sum / student_num
 print("학생 수 : ", student_num, ", 총점 : ", sum, ", 평균 : ", avg)
+# print(f"학생 수 : {student_num}, 총점 : {sum}, 평균 : {avg}")

@@ -4,4 +4,4 @@ count = 1
 for c in myString:
     if c == " ":
         count += 1
-print("문자열 단어 갯수 : ", count)
+print("문자열 단어 갯수 :", count)
