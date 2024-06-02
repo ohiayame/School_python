@@ -1,6 +1,7 @@
 # While문을 사용하여 1~1000까지의 자연수 중 3의 배수의 합
 value = 0
 sum = 0
+# 1000 이하면 반복
 while value <= 1000:
     value += 1
     if value % 3 == 0:
