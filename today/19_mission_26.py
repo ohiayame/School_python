@@ -8,12 +8,16 @@ li = [[score for score in scores if score >= 90 ],  # 90 이상: 'A’
     [score for score in scores if 60 > score ]] # 60 미만: 'F'
 # 평균 계산
 avg_li = []
-for lists in li:
+# for lists in li:
+#     avg = 0
+#     for i in lists:
+#         avg += i
+#     avg_li.append(avg / len(lists))
+for i in range(5):
     avg = 0
-    for i in lists:
-        avg += i
-    avg_li.append(avg / len(lists))
-
+    [avg := avg + j for j in li[i]]
+    avg_li.append(avg / len(li[i]))
+    
 level = ["A", "B", "C", "D","F"]
 
 # index을 활용해 결과를 출력
