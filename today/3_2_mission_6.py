@@ -1,7 +1,7 @@
 def calculate_attendance_score(hours_per_week, absence_hours, tardy_count):
     
-    hours_per_week = hours_per_week * 15     # 총 수업 = 시수/주 × 15
-    absence_hours = absence_hours + (tardy_count // 3)     # 지각 처리 규칙 ->지각 3회는 결석 1시간
+    hours_per_week *= 15     # 총 수업 = 시수/주 × 15
+    absence_hours += tardy_count // 3    # 지각 처리 규칙 ->지각 3회는 결석 1시간
     
     # 결석시수가 총 수업시수의 1/4을 초과할 경우 학점  
     if absence_hours > hours_per_week / 4 :   
@@ -20,4 +20,6 @@ attendance_score = calculate_attendance_score(input_hours_per_week, input_absenc
 if attendance_score ==  "F(학점 미부여)":     
     print("당신의 출력 점수는 ",attendance_score,"점입니다.")    
 else :
-    print("당신의 출력 점수는 %.2f점입니다." % attendance_score)    
+    print("당신의 출력 점수는 %.2f점입니다." % attendance_score)
+    # print("당신의 출력 점수는 {:.2f}점입니다.".format(attendance_score))   
+    # print(f"당신의 출력 점수는 {attendance_score:.2f}점입니다.")

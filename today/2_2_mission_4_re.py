@@ -8,13 +8,13 @@ def calculate_average(math_score, science_score, english_score):
 def average_score(average):  
     if average >= 90 :
         score = "A"
-    elif 80 <= average < 90 :
+    elif 80 <= average :
         score = "B"
-    elif 70 <= average < 80 :
+    elif 70 <= average :
         score = "C"
-    elif 60 <= average < 70 :
+    elif 60 <= average :
         score = "D"              
-    elif average < 60 :
+    else:
         score = "F"  
     return score
 

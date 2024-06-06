@@ -6,13 +6,13 @@ def calculate_average(math_score, science_score, english_score):
 # A: 90점 이상, B: 80점 이상 90점 미만, C: 70점 이상 80점 미만, D: 60점 이상 70점 미만, F: 60점 미만  
     if average >= 90 :
         score = "A"
-    elif 80 <= average < 90 :
+    elif 80 <= average :
         score = "B"
-    elif 70 <= average < 80 :
+    elif 70 <= average :
         score = "C"
-    elif 60 <= average < 70 :
+    elif 60 <= average :
         score = "D"              
-    elif average < 60 :
+    else:
         score = "F"  
     
     print("평균 점수는", average, "점이고, 학점은", score,"입니다.")

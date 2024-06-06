@@ -22,6 +22,6 @@ elif (line1 == line2) or (line2 == line3) or (line3 == line1) :
     print( msg.format("이등변") )
     
 # 세 변의 길이가 모두 다르다면 부등변삼각형
-elif line1 != line2 != line3 :
+else:
     print( msg.format("부등변") )
 

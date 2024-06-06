@@ -14,6 +14,3 @@ if input_square_meters > 0 :
     convert_to_(input_square_meters)
 else:    
     print("잘못된 입력입니다")    
-    
-
-
