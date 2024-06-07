@@ -4,10 +4,8 @@ baseValue = float(input("기본값을 입력하세요: "))
 def select0peration():
     global baseValue
     # 더하기, 빼기, 곱하기, 나누기 중 하나의 연산을 수행
-    print("1.더하기")
-    print("2.빼기")
-    print("3.곱하기")
-    print("4.나누기")
+    print("1.더하기 \n2.빼기 \n3.곱하기 \n4.나누기")
+
     #  사용자가 연산을 선택하고 숫자를 입력
     num = int(input("선택"))
     value = int(input("숫자 입력"))

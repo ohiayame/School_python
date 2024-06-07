@@ -5,6 +5,7 @@ departure_time_minute = int(input())  # 출발 시간(분)
 
 time_of_arrival_hour = int(input())   # 도착 시간(시)
 time_of_arrival_minute = int(input())   # 도착 시간(분)
+
 # 이동 거리(km)
 distance = float(int(input()))
 
@@ -14,17 +15,16 @@ minute =  time_of_arrival_minute - departure_time_minute
 # if minute >= 60:
 #     minute -= 60
 #     hour += 1
-# 시간단위로
-hour_all = hour + minute / 60     
+
 # 평균 속도 = 이동 거리(km) / 총 이동 시간(h)
-average_speed = distance / hour_all
+average_speed = distance /  (hour + minute / 60) 
 # 이동 시간은 분 단위
 
 # 60km/h 미만 :  "느림"
 if average_speed < 60 :
     msg = "느림"
 # 60km/h 이상 90km/h 미만: "보통"
-elif 60 <= average_speed < 90 :
+elif average_speed < 90 :
     msg = "보통"
 # 90km/h 이상 : "빠름"
 else:

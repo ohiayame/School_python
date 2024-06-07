@@ -25,7 +25,5 @@ for i in range(12):
             
 last_value = (11 -(total % 11)) % 10 
 
-if last_value == int(text[12]):
-    print("유효한 주민번호입니다.") 
-else:
-    print("유효하지 않은 주민번호입니다.")           
+
+print("유효한 주민번호입니다."if last_value == int(text[12]) else "유효하지 않은 주민번호입니다.") 

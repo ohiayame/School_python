@@ -5,13 +5,13 @@ Temperature = float(int(input("현재 온도(섭씨)를 입력하세요: ")))
 if 30 <= Temperature:
     msg = "수영"
 #  20도 이상 30도 미만: 등산
-elif 20 <= Temperature < 30:
+elif 20 <= Temperature:
     msg = "등산"
 #  10도 이상 20도 미만: 자전거 타기
-elif 10 <= Temperature < 20:
+elif 10 <= Temperature :
     msg =  "자전거 타기"
 #  10도 미만: 스키
-else :
+else:
     msg =  "스키"
     
 print("현재 온도:",Temperature,"도")    
