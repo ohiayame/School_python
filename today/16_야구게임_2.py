@@ -5,12 +5,12 @@ cp_li = []
 while len(cp_li) < 3:
     cp_random = random.randint(0,9)
     random_flag = True
-    for i in cp_li:
+    for i in cp_li:                 
         if i == cp_random:
             random_flag = False
-    if random_flag:
+if random_flag:
         cp_li.append(cp_random)
-        
+
 game_count = 0
 game_out = 0
 # 게임 시작
@@ -45,4 +45,4 @@ while True:
     if game_strike == 3:
         print("게임 종료: 승리")
         break
-print("정답:", " ".join(map(str,cp_li)))
+print("정답:", *cp_li)
