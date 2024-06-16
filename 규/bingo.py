@@ -76,5 +76,5 @@ while Bingo_count < 3:
     if bingo < Bingo_count:
         print("BINGO!!!!!!")
     # 결과 출력
-    print(f"현재까지의 빙고: {Bingo_count}")
+    print(f"현재까지의 빙고: {Bingo_count}\n")
 print(f"{Bingo_count}개 빙고!! 시도 횟수 {game_count}")
