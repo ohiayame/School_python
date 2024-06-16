@@ -24,7 +24,7 @@ input_li = "?"
 game_count = 0  # 면저 게임횟수, out횟수의 변수를 선언
 game_out = 0
 # 3) 게입 시작(게임횟수, out횟수) !!!!!while을 사용!!!!!
-
+while True:
     # !!!!게임횟수 세기!!!!!!
     
     # 게임이 반복될 때마다 strike와 ball의 횟수를 초기화
@@ -34,22 +34,22 @@ game_out = 0
     # 3-1)index으로 결과를 확인 -> index는 리스트의 순번 (0부터 시작)
     for i in range(3):
         # !!!!!!!!위의 i를 j로 바꿔서 for문 만들기!!!!!!!!!
-        
+        for j in random(3):
             if cp_li[i] == input_li[j]: # 만약에 리스트의 원소가 같으면
             # !!!!! strike와 ball의 횟수 세기 (+1) !!!!!! 
                 if i == j:  # (위의 조건이 만족되며)만약에 index값이 같으면 strike?? 아니면 ball???
-                    
+                    game_strike += 1
                             #(위의 조건이 만족되며) index값이 다를 때 strike?? 아니면 ball???
     
     # 만약에 strike와 ball가 없으면 out 횟수 세기 (+1)
     
     # 3-2) 결과 출력 {}strike {}ball \ {}out
     # !!!!!! 만약에 out이 있으면 !!!!!!
-
-        print(f"결과:{}Strike, {} Ball")
+    if game_out > 0 :
+        print(f"결과:{game_strike} Strike, {game_ball} Ball")
     # !!!!! out이 없으면 !!!!!
 
-        print(f"결과:{}Strike, {} Ball, {} Out")
+        print(f"결과:{game_strike} Strike, {game_ball} Ball, {game_out} Out")
     
     # 승리) strike * 3 
     # !!!!!만약에 strike 횟수가 3번이상이면 msg를 정하고 brike !!!!!!
@@ -64,7 +64,7 @@ game_out = 0
     # !!!!! out 횟수가 2번이상이면 msg를 정하고 brike !!!!!   
     
         msg = "패배 (out 횟수 2번 초과)"
-        
+        break
 # 4) 게임 종료 게임결과와 정답을 출력
 # !!!!!! 게임 종료: (결과 msg) !!!!!!
 
