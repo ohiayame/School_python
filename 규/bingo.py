@@ -5,17 +5,18 @@ li = [[],[],[],[],[]]
 for i in range(5):
     count = 5 # 원소는 5개임
     while count > 0:
-        # 랜덤으로 숫자를 선택
-        random_num = random.randint(1,25)
+        random_num = random.randint(1,25)  # 랜덤으로 숫자를 선택
+        # 리스트를 돌려서 중복을 확인
         flag = True
         for j in li:
-            for l in j: # 리스트를 돌려서 중복을 확인
+            for l in j: 
                 if l == random_num :
                     flag = False
                     break
         if flag:
             li[i].append(random_num)
             count -= 1
+    
 # bingo를 출력
 for lists in li:
     print(*lists)
@@ -36,6 +37,7 @@ while Bingo_count < 3:
             break
         else:
             msg = "1 에서 25 사이의 숫자를 입력해주세요 : "
+    
     # 숫자를 체크해서 0으로 바꾸기
     for i in range(5):
         for j in range(5):
@@ -43,7 +45,7 @@ while Bingo_count < 3:
                 li[i][j] = 0
                 print("숫자를 체크 했습니다!")
     
-    count_r = 0# naname ->
+    count_r = 0  # naname ->
     count_l = 0  # naname <-
     # 1index, 2index를 돌려서 체크
     for i in range(5):
@@ -77,4 +79,6 @@ while Bingo_count < 3:
         print("BINGO!!!!!!")
     # 결과 출력
     print(f"현재까지의 빙고: {Bingo_count}\n")
-print(f"{Bingo_count}개 빙고!! 시도 횟수 {game_count}")
+    for lists in li:
+        print(*lists)
+print(f"\n{Bingo_count}개 빙고!! 시도 횟수 {game_count}")
