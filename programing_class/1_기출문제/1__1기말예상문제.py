@@ -7,32 +7,32 @@ def true_num(num):
                 num_a, num_b = map(int,num.replace("~"," ").split())
                 if 2 <= int(num_a) <= 9 and 2 <= int(num_b) <= 9:
                     gugudan(num_a, num_b)
+                    return True
                 else:
                     return False
     else:
         if 2 <= int(num) <= 9:
             gugudan(num)
+            return True
         else:
             return False
 
 # 메뉴 1의 구구단 계산 함수
 def gugudan(num1, num2=None):
     if num2 == None:
-        for i in range(1, 10):
-            print(f"{num1} * {i} = {num1 * i}")
-    else:
-        for dan in range(num1, num2 + 1):
+        num2 = int(num1)
+    for dan in range(int(num1), num2 + 1):
+        if dan == 0:
             print()
-            for i in range(1, 10):
-                print(f"{dan} * {i} = {dan * i}")
-    
+        for i in range(1, 10):
+            print(f"{dan} * {i} = {dan * i}")
 # 메뉴 2의 랜덤값 삼각형 출력 
 def randomTriangle(height):
     for h in range(height):
         num_li = []
         for _ in range(height - (h+1)):
             num_li.append(" ")  
-        while len(num_li) == height:
+        while len(num_li) < height:
             random_num = random.randint(0,9)
             flag = True
             for i in num_li:
