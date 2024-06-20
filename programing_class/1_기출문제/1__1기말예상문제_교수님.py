@@ -8,13 +8,11 @@ def print_menu():
     print("2. 삼각형 출력")
     print("3. 종료")
     print("-" * width)
-
+# 계산할 때 범위에 맞는지 확인하는 함수 
 def is_valid_num(arg_start, arg_end, *args):
-    
     for value in args:
         if not (arg_start <= value <= arg_end):
             return False
-            
     return True
 
 def print_mul_table():
