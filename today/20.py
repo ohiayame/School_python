@@ -17,7 +17,7 @@ def True_num(start, end, *li):
 # 구구단 함수
 def gugudan():
     while True:
-        print("출려할 구구단을 아래 형식으로 입력하세요(예: 2, 2~5)")
+        print("출력할 구구단을 아래 형식으로 입력하세요(예: 2, 2~5)")
         dan = input()
         dan_li = dan.split("~")
         dan_li = [int(d) for d in dan_li]
