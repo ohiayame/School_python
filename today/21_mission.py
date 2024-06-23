@@ -3,33 +3,52 @@ sentence = """pos pos hello  bar
 foo bar foo pos kin pos
 test test pos"""
 
-# 단어의 개수
-msg_li = sentence.split()
-msg_li = [i for i in msg_li]
+# len함수
+def len_(m):
+    c = 0
+    for _ in m:
+        c += 1
+    return c
 
-# 문자의 수
-cher_li = sentence.replace(" ","")
-cher_li = [j for j in cher_li]
-    
+# 단어의 개수, 문자의 수
+m = ""
+msg_li = []
+cher_li = []
+for i in sentence:
+    if (i == " " or i == "\n"):
+        if len_(m) >= 1:
+            msg_li.append(m)
+            m = ""
+        else:
+            m = ""
+            continue
+    else:
+        m += i
+        cher_li.append(i)
+if len_(m) >= 1:
+    msg_li.append(m)
+
+
 # 문자열의 위치
 def num_msg(msg):
     li = [] # 위치
     m = ""  # 단어
     n = 0   # 줄
-    for i in range(len(sentence)):
-        m += sentence[i]
+    for i in range(len_(sentence)):
         # 위치: i는 현제 위치, 해당단어의 길이(공백은 빼고)를 빼고 개행 1번당 더하기 4
-        if (sentence[i] == " " and (m.replace(" ","")) == msg) or (sentence[i] == "\n" and (m.replace("\n","")) == msg) :
-            l = (i - (len(m)-1) + (4 * n))
+        if (sentence[i] == " " and m == msg) or (sentence[i] == "\n" and m == msg) :
+            l = (i - (len_(m)) + (4 * n))
             li.append(l)
         # 공백이나 개행이 있을 경우에는 초기화, 개행 수를 세우기
         if sentence[i] == "\n" or sentence[i] == " ":
             if sentence[i] == "\n":
                 n += 1
             m = ""
+        else:
+            m += sentence[i]
     # 마지막꺼 확인
     if m == msg:
-        l = i - (len(m)-1)+ (4 * n)
+        l = i - (len_(m)-1)+ (4 * n)
         li.append(l)
     return li, n
 
@@ -52,5 +71,5 @@ li, n = num_msg(input_msg)
 print("검색된 문자열의 위치:",li)
 
 # 단어의 개수와 전체문자의 수를 출력 
-print(f"단어의 개수: {len(msg_li)}\n전체 문자 수: {len(cher_li)-n}")
+print(f"단어의 개수: {len_(msg_li)}\n전체 문자 수: {len_(cher_li)}")
 print("줄 수:", n + 1)
