@@ -35,9 +35,9 @@ def num_msg(msg):
     m = ""  # 단어
     n = 0   # 줄
     for i in range(len_(sentence)):
-        # 위치: i는 현제 위치, 해당단어의 길이(공백은 빼고)를 빼고 개행 1번당 더하기 4
+        # 위치: i는 현제 위치, 해당단어의 길이(공백은 빼고)를 빼고 개행 1번당 더하기 2
         if (sentence[i] == " " and m == msg) or (sentence[i] == "\n" and m == msg) :
-            l = (i - (len_(m)) + (4 * n))
+            l = (i - (len_(m)) + (2 * n))
             li.append(l)
         # 공백이나 개행이 있을 경우에는 초기화, 개행 수를 세우기
         if sentence[i] == "\n" or sentence[i] == " ":
@@ -48,7 +48,7 @@ def num_msg(msg):
             m += sentence[i]
     # 마지막꺼 확인
     if m == msg:
-        l = i - (len_(m)-1)+ (4 * n)
+        l = i - (len_(m)-1)+ (2 * n)
         li.append(l)
     return li, n
 
