@@ -8,7 +8,7 @@ msg = ""
 if a > b:
     msg = ">"    
 elif a < b :
-    msg = "<"
+    msg = "<" 
 else:
     msg ="=="
     

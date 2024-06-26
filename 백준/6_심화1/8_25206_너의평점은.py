@@ -13,7 +13,7 @@ for i in range(20):
     elif score == "B+":
         score = 3.5
     elif score == "B0":
-        score = 3.0
+        score = 3.0 
     elif score == "C+":
         score = 2.5
     elif score == "C0":

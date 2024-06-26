@@ -11,7 +11,7 @@ input_value = map(int,input().split())
 #         char = 0
 #     else:
 #         char += int(i)
-
+ 
 value = int(input())
 count = 0
 for test in input_value :

@@ -8,4 +8,4 @@ sum = input_int + input_float
 if sum > 100 :
     print("합이 100을 초과합니다")
 else:
-    print("합이 100 이하입니다")
+    print("합이 100 이하입니다") 

@@ -8,7 +8,7 @@ message = ""
 count = 0
 for char in li:   
     message += char
-    count += 1
+    count += 1 
     if count == 2:
         print(message)
         message = ""

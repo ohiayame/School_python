@@ -9,4 +9,4 @@ for i in range(1,1000000000):
         num = i * 6
         cou += 1
         allnum += num
-print(cou)
+print(cou) 

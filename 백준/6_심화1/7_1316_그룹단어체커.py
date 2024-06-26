@@ -11,7 +11,7 @@ for i in li:
     outflag = True
     count = 0
     test = []
-    for j in char:
+    for j in char: 
         if not outflag:
             break
         for n in test:

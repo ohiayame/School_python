@@ -9,7 +9,7 @@ def getRandList(argNumRandValues, argStartValue, argEndValue):
     rand_trial_count = 0
 
     # 랜덤 값 3개를 생성하기 위해 while문 사용
-    while rand_trial_count < argNumRandValues:
+    while rand_trial_count < argNumRandValues: 
         
         # 랜덤 값 생성
         rand_value = random.randint(argStartValue, argEndValue)
@@ -53,9 +53,8 @@ while True:
                     count_strkie += 1
                 else:
                     count_ball += 1
-                
                 break
-            
+        
     # 스트라이크 아웃
     if count_strkie == 0 and count_ball == 0:
         count_strike_out += 1

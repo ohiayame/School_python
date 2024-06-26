@@ -86,4 +86,4 @@ while True:
     elif input_num == 4:
         break
     else:
-        print("제 입력")
+        print("제 입력해주세요")

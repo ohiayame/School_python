@@ -6,4 +6,4 @@ for msg_index in range(len(msg)):
         if msg[msg_index] in dial_index:
             timer += dial.index(dial_index) + 3
             
-print(timer)
+print(timer) 

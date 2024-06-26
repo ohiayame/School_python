@@ -3,7 +3,7 @@
 # Nickel, $0.05
 # Penny, $0.01
 num = int(input())
-li_ = []
+li_ = [] 
 for _ in range(num):
     value = int(input())
     li = [0, 0, 0, 0]

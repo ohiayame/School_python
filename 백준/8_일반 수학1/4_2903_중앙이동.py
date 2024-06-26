@@ -6,4 +6,4 @@ for _ in range(input_num - 1):
     num += tohagi
 
 print(num ** 2)
-print(num)
+print(num) 

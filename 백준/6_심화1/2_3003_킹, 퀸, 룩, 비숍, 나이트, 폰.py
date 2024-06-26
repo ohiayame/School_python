@@ -10,7 +10,7 @@ night = 2 - input_night
 phon = 8 - input_phon
 print(kin, queen, look, bishop, night, phon)
 
-
+ 
 ############
 
 chess = [1, 1, 2, 2, 2, 8]

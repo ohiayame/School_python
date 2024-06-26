@@ -14,7 +14,7 @@ elif value >= 60: # 60 <= value < 70
     score = "D"
 else:             # value < 60
     score = "F"
-        
+    
 print(score)
 
 # 주위: 조건은 중복되지 않는다, 놓친 조건이 없는지 확인

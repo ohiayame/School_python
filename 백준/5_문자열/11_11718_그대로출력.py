@@ -10,4 +10,4 @@ while True:
         break
     
 for message in li:
-    print(message)
+    print(message) 

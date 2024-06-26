@@ -14,7 +14,7 @@ for num_str in num_list:
     
     if sum > 100:
         over_100_flag = True
-        break
+        break 
     
 if over_100_flag:
     print("100 초과", sum)

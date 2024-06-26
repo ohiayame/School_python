@@ -4,4 +4,4 @@ sum = 0
 for value in input_num:
     sum += int(value)
     
-print(sum)
+print(sum) 

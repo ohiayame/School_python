@@ -15,4 +15,4 @@ while True:
         break
     
 for sum in li:
-    print(sum)
+    print(sum) 

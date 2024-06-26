@@ -9,7 +9,7 @@ value_N = int(input())
 result_cost = 0
 # 물건의 가격 a와 개수 b가 공백을 사이에 두고 주어진다.
 for _ in range(value_N):
-    a,b = map(int,input().split())
+    a,b = map(int,input().split()) 
     result_cost += a * b
     
 if result_cost == cost_X:

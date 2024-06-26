@@ -81,4 +81,5 @@ while Bingo_count < 3:
     print(f"현재까지의 빙고: {Bingo_count}\n")
     for lists in li:
         print(*lists)
+    
 print(f"\n{Bingo_count}개 빙고!! 시도 횟수 {game_count}")

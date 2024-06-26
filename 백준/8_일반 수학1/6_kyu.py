@@ -12,4 +12,4 @@ else:
     y = naname + 1 - input_num
     x = input_num
     
-print(f"{y}/{x}")
+print(f"{y}/{x}") 

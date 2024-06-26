@@ -17,7 +17,7 @@ while True:
         continue
     
     # cp random으로 받고 출력
-    # cp_choice = random.choice(li)
+    # cp_choice = random.choice(li) 
     cp_choice = li[random.randint(0,2)]
     print("컴퓨터: ",cp_choice)
     

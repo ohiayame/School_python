@@ -8,7 +8,7 @@ if value >= 90:
 elif value >= 80: 
     score = "B"
 elif value >= 70: 
-    score = "C"
+    score = "C" 
 elif value >= 60: 
     score = "D"
 else:             

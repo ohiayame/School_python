@@ -6,4 +6,4 @@ for _ in range(num):
     li.append(a + b)
     
 for sum in li:
-    print(sum)
+    print(sum) 

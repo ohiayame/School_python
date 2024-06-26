@@ -7,7 +7,7 @@ draw = 0
 while True:
     li = ["바위", "가위", "보"]
     li2 = [["무승부!","승리!","패배"],["패배","무승부!","승리!"],["승리!","패배","무승부!"]]
-
+    
     input_choice = input("my: ")
     
     if input_choice != "가위" and input_choice != "바위" and input_choice != "보":

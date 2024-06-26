@@ -3,4 +3,4 @@
 value = int(input("입력"))
 
 if value % 2 == 0:
-    print("짝수")
+    print("짝수") 

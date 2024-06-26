@@ -6,12 +6,12 @@ for _ in range(n):
     num = map(int,input().split())
     for i in num:
         li_1.append(i)
-        
+    
 for _ in range(n):
     num =  map(int,input().split())
     for i in num:
         li_2.append(i)
-        
+    
 for i in range(n * m):
     result = int(li_1[i]) + int(li_2[i])
     li_3.append(result)

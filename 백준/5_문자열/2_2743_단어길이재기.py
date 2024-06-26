@@ -1,2 +1,2 @@
 msg = input()
-print(len(msg))
+print(len(msg)) 

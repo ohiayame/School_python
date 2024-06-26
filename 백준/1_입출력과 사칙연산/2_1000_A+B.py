@@ -4,4 +4,4 @@ print(value)
 
 # input,split-> int 둘다 적용 -> map
 a, b =  map(int,input().split())
-print(a + b)
+print(a + b) 

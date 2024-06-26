@@ -10,4 +10,4 @@ if naname % 2 == 0:
 else:
     y = num
     x = naname + 1 - y
-print(f"{x}/{y}")
+print(f"{x}/{y}") 

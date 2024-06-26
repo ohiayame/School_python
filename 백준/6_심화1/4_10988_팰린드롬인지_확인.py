@@ -16,7 +16,7 @@ if flag == 0:
     print(1)
 else:
     print(0)
-
+ 
 ############
 word = input()
 if list(word) == list(reversed(word)):print(1)

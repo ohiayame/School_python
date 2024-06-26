@@ -14,5 +14,4 @@ for i in li:
     number = int(i)/max_value*100
     all_value += number
 
-
-print(all_value/value)
+print(all_value/value) 

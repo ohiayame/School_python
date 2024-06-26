@@ -9,4 +9,4 @@ else:
     h -= 1
 if h < 0:
     h = 23
-print(h,m)
+print(h,m) 

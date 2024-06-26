@@ -10,7 +10,7 @@ while True:
     if value == 20:
         break
     
-value = 1      
+value = 1     
 while value < 21:
     print(value)
     value += 1

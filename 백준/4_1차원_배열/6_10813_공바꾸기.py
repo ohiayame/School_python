@@ -9,7 +9,7 @@ for _ in range(m):
     # 교환하는 통 번호를 입력 받기
     i,j = map(int,input().split())
     # 번호 -> index에 변경
-    i -= 1
+    i -= 1 
     # 만약 마지막 원소면 -1
     if j == n:
         j = -1

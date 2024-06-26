@@ -10,7 +10,7 @@ for _ in range(N):  # 입력 받은 도화지 개수만큼 돈다.
 result = 0  # 넓이를 출력할 변수
 for k in range(100):  # 전체 도화지를 돌면서
     result += array[k].count(1)  # 1 개수만 세어준다
-
+    
 print(result)
 
 ##############

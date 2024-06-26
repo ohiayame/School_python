@@ -6,4 +6,4 @@ if value % 2 == 0:
     print("짝수")
 
 else:       # elif value % 2 == 1 X 굳이 조건을 만들 필요가 없읍 
-    print("홀수") 
+    print("홀수")  

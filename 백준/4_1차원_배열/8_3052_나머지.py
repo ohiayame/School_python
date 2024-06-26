@@ -12,4 +12,4 @@ for i in range(10):
 count = 0
 for _ in li:
     count += 1
-print(count)
+print(count) 

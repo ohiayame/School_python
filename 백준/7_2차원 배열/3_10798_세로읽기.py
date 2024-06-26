@@ -4,7 +4,7 @@ li_3 = []
 li_4 = []
 li_5 = []
 for _ in range(5):
-    char = str(input())
+    char = str(input()) 
     for i in char:
         if _ == 0:
             li_1.append(i)

@@ -15,4 +15,4 @@ for i in li2:
 if A >= B:
     print(A)
 else :
-    print(B)
+    print(B) 

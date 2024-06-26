@@ -7,4 +7,4 @@ for _ in range(28):
     li.remove(input_num)
 
 for num in li:
-    print(num)
+    print(num) 

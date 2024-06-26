@@ -14,7 +14,7 @@ for _ in range(m):
     # for num2 in num:
     #     li.insert(i,num2)
     #     li.pop(i + count)
-    #     count += 1
+    #     count += 1 
     num.reverse()
     li[i:j] = num
 for value in li:

@@ -6,4 +6,4 @@ for i in range(1,10):
         max = value
         num = i
 print(max)
-print(num)
+print(num) 

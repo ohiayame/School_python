@@ -30,7 +30,7 @@ while True:
     if input_user == input_cp:
         msg_result = "무승부"
         count_draw += 1
-        
+    
     # 2) 승리
     elif input_user == "가위" and input_cp == "보" or \
         input_user == "바위" and input_cp == "가위" or \

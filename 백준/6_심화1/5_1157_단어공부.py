@@ -12,7 +12,7 @@ maxvalue = li[0]
 for value in li:
     if maxvalue < value:
         maxvalue = value
-
+ 
 count = 0
 test = []
 for i in li:

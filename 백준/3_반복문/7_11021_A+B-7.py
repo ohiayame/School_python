@@ -8,4 +8,4 @@ for _ in range(num):
 count = 0
 for i in li:
     count += 1
-    print(f"Case #{count}: {i}")
+    print(f"Case #{count}: {i}") 
