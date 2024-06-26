@@ -14,7 +14,7 @@ def inputMsg(msg):
 def blindMsg(msg):
     global char_li
     while True:
-        index = random.randint(0,len(msg)+1)
+        index = random.randint(0,len(msg)-1)
         if char_li[index] != "_":
             char_li[index] = "_"
             break
@@ -22,8 +22,7 @@ def blindMsg(msg):
 # 단어 3개 입려 받기
 msg_li = []
 for msg in ["첫 번째","두 번째","세 번째"]:
-    input_msg = inputMsg(msg)
-    msg_li.append(input_msg)
+    msg_li.append(inputMsg(msg))
 
 # 3개의 단어중 하나를 선택
 choice_msg = msg_li[random.randint(0,2)]
