@@ -10,7 +10,7 @@ def bingoBoard():
 # 랜덤으로 생성한 숫자가 리스트에 있는지 확인
 # 있으면 True 
 def RandomNum():
-    random_num = random.randint(1,16)
+    random_num = random.randint(1,36)
     if random_num < 10:
         random_num = " " + str(random_num)
     random_num = str(random_num)
@@ -80,7 +80,7 @@ while bingo < 2:
             Rnaname += 1
             if Rnaname == n:
                     bingo += 1
-        if li[(n*i)+(2-i)]== "* ":
+        if li[(n*i)+(n-1-i)]== "* ":
             Lnaname += 1
             if Lnaname == n:
                     bingo += 1
