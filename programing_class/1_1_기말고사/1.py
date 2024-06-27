@@ -12,25 +12,14 @@ dice_li = [0,0,0,0,0,0]
 # n만큼 주사위를 던지기
 for i in range(n):
     dice_num = random.randint(1,6)
-    if dice_num == 1:
-        dice_li[0] += 1
-    elif dice_num == 2:
-        dice_li[1] += 1
-    elif dice_num == 3:
-        dice_li[2] += 1
-    elif dice_num == 4:
-        dice_li[3] += 1
-    elif dice_num == 5:
-        dice_li[4] += 1
-    else:
-        dice_li[5] += 1
-    
+    dice_li[dice_num-1] += 1
+
 # 최대수 찾기
 max_num = 0
 for num in dice_li:
     if max_num <= num:
         max_num = num
-        
+
 # 별 개수 계산
 stars_li = [0,0,0,0,0,0]
 index = 0
