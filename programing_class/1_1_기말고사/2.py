@@ -77,10 +77,12 @@ while bingo < 2:
     Lnaname = 0
     for i in range(n):
         if li[(n*i)+i]== "* ":
+            # [i * (n+1)]
             Rnaname += 1
             if Rnaname == n:
                     bingo += 1
         if li[(n*i)+(n-1-i)]== "* ":
+            # [(i + 1) * (n - 1)]
             Lnaname += 1
             if Lnaname == n:
                     bingo += 1
