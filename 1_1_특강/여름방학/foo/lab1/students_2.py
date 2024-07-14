@@ -3,7 +3,7 @@ file_path = "2024_std_num_hight_school.csv"
 
 man = 0
 woman = 0
-
+# 파일 열기
 with open(file_path, "r", encoding='utf-8-sig') as file:
     csv_reader = csv.DictReader(file)
     
@@ -14,9 +14,13 @@ with open(file_path, "r", encoding='utf-8-sig') as file:
         except:
             continue
 
+# 전체 학생 수
 students = man + woman
+# %
 p_man = (man / students * 100)
 p_woman = (woman / students * 100)
+
+# 결과 값 출력
 print(f"전체 고등학생 수: {students:,} 명")
 print(f"남성 고등학생 수: {man:,} 명")
 print(f"여성 고등학생 수: {woman:,} 명")
