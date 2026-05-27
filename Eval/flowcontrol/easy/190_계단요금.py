@@ -6,7 +6,7 @@ total_fee = 0
 
 # 층수 N번 반복하여 결과를 출력
 for num in range(1, n + 1):
-    # 층 별 요금 계산 (K층은 K*100원)
+    # 층 요금 계산 (K층은 K*100원)
     fee = 100 * num
     # 누적 요금 계산
     total_fee += fee
